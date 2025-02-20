@@ -19,6 +19,9 @@
             <a-asset-item id="organicwaste"
                 src="./scenes/rotten_dirty_organic_waste.glb">
             </a-asset-item>
+            <a-asset-item id="PMD"
+                src="./scenes/dirty_plastic_bottles_trash_3_piece_set.glb">
+            </a-asset-item>
         </a-assets>
 
         <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
@@ -34,6 +37,11 @@
             <a-gltf-model rotation="90 0 0 " position="-0.35 0 0" scale="2 2 2" src="#organicwaste"
                 animation-mixer>
     </a-scene>
+
+    <a-entity mindar-image-target="targetIndex: 4">
+        <a-gltf-model rotation="90 0 0 " position="-0.35 0 0" scale="2 2 2" src="#PMD"
+            animation-mixer>
+</a-scene>
 </body>
 
 </html>
