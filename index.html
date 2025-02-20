@@ -22,6 +22,9 @@
             <a-asset-item id="pmd"
                 src="./scenes/dirty_plastic_bottles_trash_3_piece_set.glb">
             </a-asset-item>
+            <a-asset-item id="glascontainer"
+                src="./scenes/glass_bottles_recycle_bin_trash.glb">
+            </a-asset-item>
         </a-assets>
 
         <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
@@ -41,6 +44,11 @@
         <a-gltf-model rotation="90 0 0 " position="-0.10 0 0" scale="1 1 1" src="#pmd"
             animation-mixer>
         </a-entity>
+
+        <a-entity mindar-image-target="targetIndex: 2">
+            <a-gltf-model rotation="-90 0 0 " position="-0.10 0 0" scale="0.25 0.25 0.25" src="#glascontainer"
+                animation-mixer>
+            </a-entity>
 
             
 </a-scene>
